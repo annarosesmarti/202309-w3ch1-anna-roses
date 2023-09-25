@@ -30,7 +30,7 @@ a {
 }
 
 .main-container {
-  padding: 25px;
+  padding: 35px 25px 30px 25px;
   font-family: var(--main-font);
   color: var(--main-color);
 }
@@ -39,4 +39,20 @@ a {
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 15px;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.input {
+  padding: 10px;
+  width: 350px;
 }
