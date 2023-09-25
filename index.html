@@ -20,21 +20,23 @@
     <h1 class="title">Mandanos tu email</h1>
     <form class="parent-container">
       <label class="text" for="email">Remitente:</label>
-      <input class="input" id="email" type="text" value="poor-student@isdicoders.com">
+      <input class="input" id="email" type="text" value="poor-student@isdicoders.com" required>
       <label class="text" for="email">Destinatario:</label>
-      <input class="input" id="email" type="text">
+      <input class="input" id="email" type="text" required>
       <label class="text" for="subject">Asunto:</label>
-      <input class="input" id="subject" type="text">
+      <input class="input" id="subject" type="text" required>
       <label class="text" for="body">Cuerpo:</label>
-      <textarea class="input" id="body" cols="30" rows="5"></textarea>
+      <textarea class="input text-length" id="body" cols="30" rows="5" onkeyup="textCounter()" required></textarea>
       <label class="text" for="attach-file">Adjunto:</label>
       <input class="input" id="attach-file" type="file">
-      <div class="checkbox">
-        <input id="schedule-sending" type="checkbox" onclick="showSetDateAndTime()">
-        <label for="schedule-sending">Programar envío:</label>
-      </div>
-      <label id="setDate" class="text off" for="set-date&time">Fecha y hora para enviarlo:</label>
-      <input class="input" id="setDate" type="date">
+      <section class="checkbox-class">
+        <input class="checkbox" id="schedule" type="checkbox" onclick="showSetDateAndTime()">
+        <label for="schedule">Programar envío:</label>
+      </section>
+      <section class="set-date">
+        <label class="text" id="set-date" for="set-date&time">Fecha y hora para enviarlo:</label>
+        <input class="input" id="set-date" type="date" required>
+      </section>
       <button class="send" type="submit">Enviar</button>
     </form>
   </main>
