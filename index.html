@@ -30,10 +30,11 @@
       <label class="text" for="attach-file">Adjunto:</label>
       <input class="input" id="attach-file" type="file">
       <div class="checkbox">
-        <label for="schedule-sending">Programar envío</label>
-        <input id="schedule-sending" type="checkbox">
+        <input id="schedule-sending" type="checkbox" onclick="showSetDateAndTime()">
+        <label for="schedule-sending">Programar envío:</label>
       </div>
-
+      <label id="setDate" class="text off" for="set-date&time">Fecha y hora para enviarlo:</label>
+      <input class="input" id="setDate" type="date">
     </form>
   </main>
 </body>
